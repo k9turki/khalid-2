@@ -3,6 +3,7 @@ from keras import Sequential
 from keras.layers import InputLayer, Dense
 from sklearn.model_selection import train_test_split
 import tensorflow
+
 df = pd.read_csv('diabetes.csv')
 train_df, test_df = train_test_split(df, test_size=.3)
 train_df = pd.DataFrame(train_df)
